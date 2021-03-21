@@ -1,0 +1,40 @@
+import React from 'react';
+
+export default class Login extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      username:"",
+      password:"",
+      error:"",
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  render(){
+    return (<div className="login">
+      <div className="logo"><img src="./assets/images/logos/csic_completo.png" alt="Logotype"/></div>
+      <form method="post" action="/mail">
+        <h1>Acceso a la pasarela de correo electrónico</h1>
+        {this.props.error ? <div className={"error-msg"}>Credenciales incorrectas</div> : null }
+        <div className="form-field">
+          <label htmlFor="email">E-mail</label>
+          <div className="emailWrapper">
+            <input type="email" name="email" id="email" value={this.state.username}
+              onKeyUp={e=>e.keyCode === 13 ? this.handleSubmit() : null}
+              onChange={e=>this.setState({username:e.target.value})}/><span id="domain">@{this.props.profile.domain}</span>
+          </div>
+        </div>
+        <div className="form-field">
+          <label htmlFor="email">Contraseña</label>
+          <input type="password" name="password" id="password" value={this.state.password}
+            onKeyUp={e=>e.keyCode === 13 ? this.handleSubmit() : null}
+            onChange={e=>this.setState({password:e.target.value})}/>
+        </div>
+        <button className="button1" type="button" onClick={this.handleSubmit}>Acceder</button>
+      </form>
+    </div>);
+  }
+  handleSubmit(){
+    this.props.login((this.state.username + this.state.password));
+  }
+}
