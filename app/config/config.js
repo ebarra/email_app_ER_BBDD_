@@ -7,7 +7,7 @@ export let GLOBAL_CONFIG = {
   emails:emails,
   chats:chats,
   hideLogo:false,
-  localStorageKey:"RESCORMeailKike222d2d32d2",
+  localStorageKey:"RESCORMBBDD3",
   escapp:{
     // endpoint:"http://localhost:3000/api/escapeRooms/3",
     endpoint:"https://escapp.dit.upm.es/api/escapeRooms/146",
