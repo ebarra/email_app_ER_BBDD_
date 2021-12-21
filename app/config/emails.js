@@ -63,15 +63,15 @@ let emails = [
     from: "riesgo@crimen.es",
     picture:"assets/images/medico_avatar.jpg",
     name:"Mr Riesgo",
-    issue:"RE: Código seguridad ensayos virus",
+    issue:"RE: Por si me pasa algo",
     description:"Ok, estupendo. Espero jamás tener que utilizar...",
     content:"Ok, estupendo. Espero jamás tener que utilizar estos datos.\n    <br/>\n    <br/>\n    ".concat(re, "\n    \n    "),
     date:printDate(-4),
     unread:true,
     categories:["received"],
     attachment:{
-      title:"dump.json",
-      url:"https://gabriel-rivas.neocities.org/sockets.pdf",
+      title:"cartera.json",
+      url:"https://www.dropbox.com/s/b2lefppv7h1tsj8/transactions.json?dl=1",
     },
   }, {
     from:"atencioncliente@ramirorestaurantes.es",
