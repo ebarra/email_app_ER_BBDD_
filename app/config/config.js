@@ -7,11 +7,11 @@ export let GLOBAL_CONFIG = {
   emails:emails,
   chats:chats,
   hideLogo:false,
-  localStorageKey:"206bRESCORM",
+  localStorageKey:"363bRESCORM",
   escapp:{
     // endpoint:"http://localhost:3000/api/escapeRooms/3",
-    endpoint:"https://escapp.dit.upm.es/api/escapeRooms/206",
-    localStorageKey:"206bESCAPP_RESCOR",
+    endpoint:"https://escape.dit.upm.es/api/escapeRooms/363",
+    localStorageKey:"363bESCAPP_RESCOR",
     imagesPath:"assets/images/",
     restoreState:"AUTO",
     I18n:{
