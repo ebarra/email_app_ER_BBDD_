@@ -1,15 +1,14 @@
-const lock = "https://loremflickr.com/320/240?lock=";
 let chats = [
   {
     name:"María",
     msg:"Hasta ahora, esto es un chat muy largo para que falle algo.",
-    photo:lock + 7,
+    photo: "assets/images/avatargirl1.jpeg",
     status:"online",
   },
   {
     name:"ElJefe",
     msg:"La poli te sigue la pista.",
-    photo:lock + 8,
+    photo:"assets/images/avatarboy1.jpeg",
   },
   {
     name:"MrRiesgo",
@@ -20,12 +19,12 @@ let chats = [
   {
     name:"Héctor",
     msg:"ok",
-    photo:lock + 10,
+    photo: "assets/images/avatarboy2.jpeg",
   },
   {
     name:"Vikingo",
     msg:"Un abrazo",
-    photo:lock + 11,
+    photo:"assets/images/avatarboy3.jpeg",
   },
 ];
 
