@@ -1,0 +1,27 @@
+export function loaded(is_loaded = true){
+  return {
+    type:'LOADED',
+    loaded:is_loaded,
+  };
+}
+
+export function updateProfile(profile = {}){
+  return {
+    type:'UPDATE_PROFILE',
+    profile:profile,
+  };
+}
+
+export function updateEmails(emails = []){
+  return {
+    type:'UPDATE_EMAILS',
+    emails:emails,
+  };
+}
+
+export function updateChats(chats = []){
+  return {
+    type:'UPDATE_CHATS',
+    chats:chats,
+  };
+}
