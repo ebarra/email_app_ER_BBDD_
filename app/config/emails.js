@@ -43,7 +43,7 @@ let emails = [
     categories:["received"],
     attachment:{
       title:"cartera.json",
-      url:"https://www.dropbox.com/scl/fi/5pfpfiidtn0pp2lfbbp19/cartera.json?rlkey=qa3k86fcean56tgi3jik8p8hl&dl=1",
+      url:"https://escape.dit.upm.es/assets/709.zip",
     },
   }, {
     from:"noreply@talentlink.com",
